@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Aboutme.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>About me</title>
+</head>
+<body>
+    <header>    
+    <a href="index.html" class="logo">Keshi</a>
+
+    <ul class="navbar">
+            <a href="index.html" >Home</a>
+            <a href="https://github.com/Aries1804?tab=repositories">Repositories</a>
+            <a href="Projects.html">Projects</a> 
+            <a href="skill.html">Skills</a>
+            <a href="Aboutme.html" >About Me</a>
+    </ul>
+    
+    <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+   <main>
+        <section id="aboutme">
+            <h2 class="title-aboutme">About me</h2>
+            <p class="Aboutme-p"> Hello! I'm Devit and my nickname is Keshi. i'm a passionate web developer who loves coding, music, and the sea. I also have a deep love for cats and cooking. I'm constantly learning new things and improving my skills in various fields.</p>
+            <div class="Aboutme-img">
+                <img src="img/2.jpg" alt="Profile image">
+            </div>
+        </section>
+
+            <div class="social-icons">
+                <a href="https://www.youtube.com/watch?v=GBIIQ0kP15E"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100058236942757&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/Czeck_freeman?t=fCJXKvtFIotLCMkO80hXmw&s=35" ><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.tiktok.com/@theycallme_keshi_?_t=8qaRl3CRmZJ&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+
+            </div>
+    </main>
+
+    <footer>   
+       <p>© 2024 Keshi | <a href="https://github.com/Aries1804" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+    </footer>
+
+    <script type="text/javascript">
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        };
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script>
+
+        ScrollReveal().reveal('#aboutme', { delay: 200, distance: '50px', origin: 'top' });
+        ScrollReveal().reveal('.title-aboutme', { delay: 400, distance: '50px', origin: 'left' });
+        ScrollReveal().reveal('.Aboutme-p', { delay: 600, distance: '50px', origin: 'right' });
+        
+    </script>
+
+
+</body>
+</html>

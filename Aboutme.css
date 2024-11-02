@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #2c3e50;
+    --text-color: #f5f5f5;
+    --main-color: #63d1f6;
+    --menu-icon: #333;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: Arial, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 1rem 5%;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--menu-icon);
+}
+
+.logo{
+    font-size: 3rem;
+    color:  var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+.logo:hover{
+    color: var(--main-color);
+    transition: 0.3s ease;
+}
+
+
+#aboutme {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#aboutme h2 {
+    margin-top: 13rem;
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+#aboutme p {
+    text-align: justify;
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.Aboutme-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    list-style: none;
+    gap: 3rem;
+}
+
+.navbar a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--text-color);
+
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover::after{
+ width: 70%;  
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+#menu-icon:hover{
+    color: var(--main-color);
+}
+
+@media(max-width: 995px){
+    #menu-icon{
+        position: fixed;
+        top: 0%;
+        right: -45%;
+        width: 250px;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 5%;
+        transition: all .55s ease;
+        background: var(--menu-icon); 
+        display: block;
+    }
+    .navbar{
+       position: absolute;
+       top: 65%;
+       right: -100%;
+       width: 250px;
+       height: auto;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       padding: 25px 15px;
+       transition: all .55s ease;
+       background: var(--menu-icon);
+    }
+    .navbar a{
+        display: block;
+        margin-left: 0;
+        margin: 1rem 0; 
+        font-size: 1.5rem;
+    }
+    .navbar.open{
+        right: 0;
+    }
+    .navbar a:hover{
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-top: 6.5%;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--main-color);
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-icons{
+    text-align: center;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3 ease;
+    color: var(--text-color);
+
+}
+
+.social-icons a:hover{
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--bg-color);
+
+}

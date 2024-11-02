@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Skills</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>    
+    <a href="index.html" class="logo">Keshi</a>
+
+    <ul class="navbar">
+            <a href="index.html" >Home</a>
+            <a href="https://github.com/Aries1804?tab=repositories">Repositories</a>
+            <a href="Projects.html">Projects</a> 
+            <a href="skill.html">Skills</a>
+            <a href="Aboutme.html" >About Me</a>
+    </ul>
+    
+    <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+            <div class="skill-card" onmouseover="showProgress(this, 90)" onmouseout="hideProgress(this)">
+                <div class="tooltip">Knowledgeable in C++</div>
+                <img src="img/c++.png" alt="C++ Icon" class="skill-icon">
+                <div class="skill-name">C++</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+
+             <div class="skill-card" onmouseover="showProgress(this, 70)" onmouseout="hideProgress(this)">
+                <div class="tooltip">Skilled in python</div>
+                <img src="img/python.png" alt="Python Icon" class="skill-icon">
+                <div class="skill-name">Python</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" onmouseover="showProgress(this, 70)" onmouseout="hideProgress(this)">
+                <div class="tooltip">Proficient in HTML & CSS</div>
+                <img src="img/html&css.png" alt="HTML & CSS Icon" class="skill-icon">
+                <div class="skill-name">HTML & CSS</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" onmouseover="showProgress(this, 80)" onmouseout="hideProgress(this)">
+                <div class="tooltip">Experienced in JavaScript</div>
+                <img src="img/js.jpg" alt="JavaScript Icon" class="skill-icon">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" onmouseover="showProgress(this, 30)" onmouseout="hideProgress(this)">
+                <div class="tooltip">Learning in Php</div>
+                <img src="img/php.png" alt="Php Icon" class="skill-icon">
+                <div class="skill-name">Php</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" onmouseover="showProgress(this, 100)" onmouseout="hideProgress(this)">
+                <div class="tooltip">Knowledgeable in MLBB</div>
+                    <video muted autoplay loop src="video/mlbb_intro.mp4" class="skill-video"></video>
+                <div class="skill-name">MLBB</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>   
+       <p>© 2024 Keshi | <a href="https://github.com/Aries1804" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+    </footer>
+
+   
+
+    <script>
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        };
+        function showProgress(skillCard, percentage) {
+            const progressBar = skillCard.querySelector('.progress');
+            progressBar.style.width = `${percentage}%`;
+        }
+
+        function hideProgress(skillCard) {
+            const progressBar = skillCard.querySelector('.progress');
+            progressBar.style.width = '0%';
+        }
+    </script>
+</body>
+</html>
