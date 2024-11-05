@@ -202,6 +202,7 @@ header{
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3 ease;
     color: var(--text-color);
+    background-color: var(--menu-icon);
 
 }
 
@@ -219,6 +220,7 @@ footer {
     color: var(--text-color);
     font-size: 1.5rem;
     margin-top: 6.5%;
+    box-shadow: 0 0 1000px 50px var(--main-color);
 }
 
 footer a {
