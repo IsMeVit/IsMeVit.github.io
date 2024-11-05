@@ -276,7 +276,13 @@ footer a:hover {
         justify-content: center;
         margin-bottom: 40%;
     }
-
+    .home .home-content p{
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px; 
+        justify-content: center;
+    }
 }
 
 
